@@ -1,0 +1,18 @@
+{
+    "id": "RoyalRedRambleRevival",
+    "name": "Royal Red Ramble Revival Project",
+    "display_name": "RRRR Project",
+    "author": [
+        "RoyalRedRamble",
+        "and the maintainers"
+    ],
+    "description": "Revival Project of the 'RoyalRedRamble' Pokermon add-on",
+    "prefix": "rx4",
+    "main_file": "main.lua",
+    "priority": 2,
+    "badge_colour": "F542C5",
+    "version": "0.1",
+    "dependencies": [
+        "Pokermon (>=3.2.0-911a)"
+    ]
+}
