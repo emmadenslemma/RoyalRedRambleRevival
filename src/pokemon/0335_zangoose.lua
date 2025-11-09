@@ -10,7 +10,7 @@ local zangoose = {
   rarity = 3,
   cost = 6,
   stage = "Basic",
-  ptype = "Dark",
+  ptype = "Colorless",
   blueprint_compat = true,
   calculate = function(self, card, context)
     if context.press_play then
