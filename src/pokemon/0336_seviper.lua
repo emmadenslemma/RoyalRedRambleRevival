@@ -25,4 +25,7 @@ local seviper = {
   end,
 }
 
-return { list = { seviper } }
+return {
+  list = { seviper },
+  config_key = "seviper",
+}

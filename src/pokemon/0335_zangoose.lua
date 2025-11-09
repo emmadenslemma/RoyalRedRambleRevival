@@ -41,4 +41,7 @@ local zangoose = {
   end,
 }
 
-return { list = { zangoose } }
+return {
+  list = { zangoose },
+  config_key = "seviper",
+}

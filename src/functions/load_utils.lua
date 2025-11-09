@@ -40,6 +40,7 @@ local function load_pokemon_file(file, map_item)
   if file.list then
     local family = {}
     for _, item in ipairs(file.list) do
+      item.config_key = item.config_key or file.config_key
       family[#family + 1] = item.name
       map_item(item)
     end

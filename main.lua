@@ -1,3 +1,4 @@
+local mod_id, mod_config = SMODS.current_mod.id, SMODS.current_mod.config
 
 assert(SMODS.load_file("src/sprites.lua"))()
 
@@ -11,3 +12,12 @@ load_directory("src/vouchers/", SMODS.Voucher)
 load_directory("src/enhancements/", SMODS.Enhancement)
 load_directory("src/backs/", SMODS.Back)
 load_directory("src/challenges/", SMODS.Challenge)
+
+local pokemon_in_pool_ref = pokemon_in_pool
+function pokemon_in_pool(center)
+  if center.mod.id == mod_id
+      and mod_config.disabled[center.config_key] then
+    return false
+  end
+  return pokemon_in_pool_ref(center)
+end
