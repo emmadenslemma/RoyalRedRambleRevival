@@ -44,13 +44,63 @@ return {
                     "{C:inactive,s:0.8}(Only during a {C:attention,s:0.8}Blind{C:inactive,s:0.8})",
                 },
             },
-        }
+            j_rx4_tandemaus = {
+                name = "Tandemaus",
+                text = {
+                    "Uses {C:attention}Population Bomb{} if hand",
+                    "contains a {C:attention}#1#{}",
+                    "{C:inactive,s:0.8}(Evolves after {C:attention,s:0.8}#2#{C:inactive,s:0.8} rounds)"
+                } 
+            },
+            j_rx4_maushold_three = {
+                name = "Maushold",
+                text = {
+                    "Uses {C:attention}Population Bomb EX{} if hand",
+                    "contains a {C:attention}#1#{}",
+                    "or a {C:attention}#2#{}",
+                    "{C:inactive,s:0.8}(Yes these stack)",
+                } 
+            },
+            j_rx4_maushold_four = {
+                name = "Maushold",
+                text = {
+                    "Uses {C:attention}Population Bomb EX{} if hand",
+                    "contains a {C:attention}#1#{}", 
+                    "or a {C:attention}#2#{}",
+                } 
+            },
+        },
+        Other = {
+            j_rx4_population_bomb = {
+                name = "Population Bomb",
+                text = {
+                    "{C:green}#1#%{} chance to give",
+                    "{C:mult}+#2#{} Mult when card is scored",
+                    "Mult is {C:attention}doubled{} per trigger",
+                    "but stops triggering on first failure.",
+                    "{C:attention}Resets{} after each hand.",
+                }
+            },
+            j_rx4_population_bomb_ex = {
+                name = "Population Bomb EX",
+                text = {
+                    "{C:green}#1#%{} chance to give",
+                    "{X:mult,C:white}X#2#{} Mult when card is scored",
+                    "Increased by {X:mult,C:white}#3#{} per trigger",
+                    "but stops triggering on first failure.",
+                    "{C:attention}Resets{} after each hand.",
+                }
+            },
+        },
     },
     misc = {
         dictionary = {
             rx4_yawn = "Yawn",
             rx4_slacking_off = "Slacking off...",
             rx4_ready_ex = "Ready!",
+            rx4_miss = "Miss",
+            rx4_population_bomb = "Population Bomb!",
+            rx4_population_bomb_big = "POPULATION BOMB!",
         }
     },
 }
