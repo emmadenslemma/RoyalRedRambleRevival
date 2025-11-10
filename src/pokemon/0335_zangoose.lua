@@ -13,21 +13,27 @@ local zangoose = {
   ptype = "Colorless",
   blueprint_compat = true,
   calculate = function(self, card, context)
-    if context.press_play then
+    if context.press_play and G.GAME.blind.name ~= 'The Hook' then
       G.E_MANAGER:add_event(Event({
         func = function()
-          if #G.hand.cards > 0 then
-            local cards = {}
-            for _, hand_card in ipairs(G.hand.cards) do
-              table.insert(cards, hand_card)
+          G.E_MANAGER:add_event(Event({
+            func = function()
+              if #G.hand.cards > 0 then
+                local cards = {}
+                for _, hand_card in ipairs(G.hand.cards) do
+                  table.insert(cards, hand_card)
+                end
+                pseudoshuffle(cards, pseudoseed('zangoose'))
+                for i = 1, math.min(2, #cards) do
+                  G.hand:add_to_highlighted(cards[i], true)
+                  play_sound('card1', 1)
+                end
+                G.FUNCS.discard_cards_from_highlighted(nil, true)
+              end
+              return true
             end
-            pseudoshuffle(cards, pseudoseed('zangoose'))
-            for i = 1, math.min(2, #cards) do
-              G.hand:add_to_highlighted(cards[i], true)
-              play_sound('card1', 1)
-            end
-            G.FUNCS.discard_cards_from_highlighted(nil, true)
-          end
+          }))
+          delay(0.7)
           return true
         end
       }))
