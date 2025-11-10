@@ -111,12 +111,18 @@ return {
     },
     misc = {
         dictionary = {
+            -- Joker Messages
             rx4_yawn = "Yawn",
             rx4_slacking_off = "Slacking off...",
             rx4_ready_ex = "Ready!",
             rx4_miss = "Miss",
             rx4_population_bomb = "Population Bomb!",
-            rx4_population_bomb_big = "POPULATION BOMB!",
+            rx4_population_bomb_big = "POPULATION BOMB!",            
+            -- Config Descriptions
+            seviper_line = "Disable Seviper and Zangoose?",
+            slakoth_line = "Disable Slakoth Line?",
+            makuhita_line = "Disable Makuhita Line?",
+            tandemaus_line = "Disable Tandemaus Line?",
         }
     },
 }
