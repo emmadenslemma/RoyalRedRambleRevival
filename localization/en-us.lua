@@ -69,6 +69,22 @@ return {
                     "or a {C:attention}#2#{}",
                 } 
             },
+            j_rx4_makuhita = {
+                name = "Makuhita",
+                text = {
+                    "{C:blue}+#1#{} hand",
+                    "{C:attention}+#2#{} hand size",
+                    "{C:inactive,s:0.8}(Evolves after {C:attention,s:0.8}#3#{C:inactive,s:0.8} rounds)",
+                } 
+            },
+            j_rx4_hariyama = {
+                name = "Hariyama",
+                text = {
+                    "{C:blue}+#1#{} hands, {C:attention}+#2#{} hand size",
+                    "{C:attention}+1{} hand size per hand",
+                    "played this round",
+                } 
+            },
         },
         Other = {
             j_rx4_population_bomb = {
