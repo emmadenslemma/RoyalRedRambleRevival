@@ -21,3 +21,36 @@ function pokemon_in_pool(center)
   end
   return pokemon_in_pool_ref(center)
 end
+
+SMODS.current_mod.config_tab = function() 
+    return {
+        n = G.UIT.ROOT,
+        config = {
+            align = "cm",
+            padding = 0.05,
+            colour = G.C.CLEAR,
+        },
+        nodes = {
+            create_toggle({
+                label = localize("seviper_line"),
+                ref_table = mod_config.disabled,
+                ref_value = "seviper",
+            }),
+            create_toggle({
+                label = localize("slakoth_line"),
+                ref_table = mod_config.disabled,
+                ref_value = "slakoth",
+            }),
+            create_toggle({
+                label = localize("tandemaus_line"),
+                ref_table = mod_config.disabled,
+                ref_value = "tandemaus",
+            }),
+            create_toggle({
+                label = localize("makuhita_line"),
+                ref_table = mod_config.disabled,
+                ref_value = "makuhita",
+            }),
+        },
+    }
+end
