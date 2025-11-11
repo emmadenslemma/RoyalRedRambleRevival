@@ -13,7 +13,7 @@ local seviper = {
   ptype = "Dark",
   blueprint_compat = true,
   calculate = function(self, card, context)
-    if context.drawing_cards and (G.GAME.current_round.hands_played > 0 or G.GAME.current_round.discards_used > 0) then
+    if context.drawing_cards and G.GAME.facing_blind and (G.GAME.current_round.hands_played > 0 or G.GAME.current_round.discards_used > 0) then
       return { cards_to_draw = 3 }
     end
     if context.joker_main
