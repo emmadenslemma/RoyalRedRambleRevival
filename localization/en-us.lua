@@ -50,24 +50,24 @@ return {
                     "Uses {C:attention}Population Bomb{} if hand",
                     "contains a {C:attention}#1#{}",
                     "{C:inactive,s:0.8}(Evolves after {C:attention,s:0.8}#2#{C:inactive,s:0.8} rounds)"
-                } 
+                }
             },
-            j_rx4_maushold_three = {
+            j_rx4_maushold = {
                 name = "Maushold",
                 text = {
                     "Uses {C:attention}Population Bomb EX{} if hand",
                     "contains a {C:attention}#1#{}",
                     "or a {C:attention}#2#{}",
-                    "{C:inactive,s:0.8}(Yes these stack)",
-                } 
+                }
             },
-            j_rx4_maushold_four = {
-                name = "Maushold",
-                text = {
-                    "Uses {C:attention}Population Bomb EX{} if hand",
-                    "contains a {C:attention}#1#{}", 
-                    "or a {C:attention}#2#{}",
-                } 
+            j_rx4_maushold_three = {
+              name = "Maushold",
+              text = {
+                  "Uses {C:attention}Population Bomb EX{} if hand",
+                  "contains a {C:attention}#1#{}",
+                  "or a {C:attention}#2#{}",
+                  "{C:inactive,s:0.8}(Yes these stack)",
+              }
             },
             j_rx4_makuhita = {
                 name = "Makuhita",
@@ -75,7 +75,7 @@ return {
                     "{C:blue}+#1#{} hand",
                     "{C:attention}+#2#{} hand size",
                     "{C:inactive,s:0.8}(Evolves after {C:attention,s:0.8}#3#{C:inactive,s:0.8} rounds)",
-                } 
+                }
             },
             j_rx4_hariyama = {
                 name = "Hariyama",
@@ -83,15 +83,15 @@ return {
                     "{C:blue}+#1#{} hands, {C:attention}+#2#{} hand size",
                     "{C:attention}+1{} hand size per hand",
                     "played this round",
-                } 
+                }
             },
         },
         Other = {
             j_rx4_population_bomb = {
                 name = "Population Bomb",
                 text = {
-                    "{C:green}#1#%{} chance to give",
-                    "{C:mult}+#2#{} Mult when card is scored",
+                    "{C:green}90%{} chance to give",
+                    "{C:mult}+#1#{} Mult when card is scored",
                     "Mult is {C:attention}doubled{} per trigger",
                     "but stops triggering on first failure.",
                     "{C:attention}Resets{} after each hand.",
@@ -100,9 +100,9 @@ return {
             j_rx4_population_bomb_ex = {
                 name = "Population Bomb EX",
                 text = {
-                    "{C:green}#1#%{} chance to give",
-                    "{X:mult,C:white}X#2#{} Mult when card is scored",
-                    "Increased by {X:mult,C:white}#3#{} per trigger",
+                    "{C:green}90%{} chance to give",
+                    "{X:mult,C:white}X#1#{} Mult when card is scored",
+                    "Increased by {X:mult,C:white}#2#{} per trigger",
                     "but stops triggering on first failure.",
                     "{C:attention}Resets{} after each hand.",
                 }
