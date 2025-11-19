@@ -115,5 +115,6 @@ local maushold={
 
 return {
   list = { tandemaus, maushold },
+  family = {"tandemaus", {key = "maushold", form = 1}, {key = "maushold", form = 0}},
   config_key = "tandemaus",
 }
