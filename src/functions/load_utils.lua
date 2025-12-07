@@ -44,9 +44,6 @@ local function load_pokemon_file(file, map_item)
       family[#family + 1] = item.name
       map_item(item)
     end
-    if (SMODS.Mods["NachosPokermonDip"] or {}).can_load and PkmnDip and PkmnDip.dex_order_groups then
-      PkmnDip.dex_order_groups[#PkmnDip.dex_order_groups + 1] = family
-    end
     pokermon.add_family(file.family or family)
   end
 end
